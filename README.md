@@ -1,6 +1,6 @@
 # Temporal Go Getting Started with Flox
 
-A simple Temporal greeting workflow in Go, packaged with a [Flox](https://flox.dev) environment that provides everything you need to get started. The Flox environment works across macOS and Linux without modification -- no manual dependency installation, no platform-specific setup such as with the [Temporal Docs Golang Tutorial](https://docs.temporal.io/develop/go/set-up-your-local-go).
+A simple Temporal greeting workflow in Go, packaged with a [Flox](https://flox.dev) environment that provides everything you need to get started. The Flox environment works across macOS and Linux (including Windows WLS2) without modification -- no manual dependency installation, no platform-specific setup such as with the [Temporal Docs Golang Tutorial](https://docs.temporal.io/develop/go/set-up-your-local-go).
 
 ## Prerequisites
 
