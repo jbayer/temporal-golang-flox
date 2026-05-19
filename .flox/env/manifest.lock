@@ -20,7 +20,7 @@
       "TEMPORAL_UI_PORT": "8233"
     },
     "hook": {
-      "on-activate": "export TEMPORAL_DATA=\"$FLOX_ENV_CACHE/temporal\"\n\nif [ ! -d \"$TEMPORAL_DATA\" ]; then\n  mkdir -p \"$TEMPORAL_DATA\"\nfi\n\ngum style \\\n  --border rounded --border-foreground 212 \\\n  --padding \"1 2\" --margin \"1 0\" \\\n  \"$(gum style --bold --foreground 212 'Temporal Golang Getting Started')\" \\\n  \"\" \\\n  \"$(gum style --bold 'Check service status:')\" \\\n  \"  flox services status\" \\\n  \"\" \\\n  \"$(gum style --bold 'View service logs:')\" \\\n  \"  flox services logs temporal\" \\\n  \"  flox services logs worker\" \\\n  \"\" \\\n  \"$(gum style --bold 'Send a hello workflow:')\" \\\n  \"  go run ./start YourName\" \\\n  \"\" \\\n  \"$(gum style --bold 'Open the Temporal Web UI:')\" \\\n  \"  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT\"\n"
+      "on-activate": "export TEMPORAL_DATA=\"$FLOX_ENV_CACHE/temporal\"\n\nif [ ! -d \"$TEMPORAL_DATA\" ]; then\n  mkdir -p \"$TEMPORAL_DATA\"\nfi\n\ngum style \\\n  --border rounded --border-foreground 212 \\\n  --padding \"1 2\" --margin \"1 0\" \\\n  \"$(gum style --bold --foreground 212 'Temporal Golang Getting Started')\" \\\n  \"\" \\\n  \"$(gum style --bold 'Check service status:')\" \\\n  \"  flox services status\" \\\n  \"\" \\\n  \"$(gum style --bold 'View service logs:')\" \\\n  \"  flox services logs temporal\" \\\n  \"  flox services logs worker\" \\\n  \"\" \\\n  \"$(gum style --bold 'Send a hello workflow:')\" \\\n  \"  go run ./start/main.go YourName\" \\\n  \"\" \\\n  \"$(gum style --bold 'Open the Temporal Web UI:')\" \\\n  \"  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT\"\n"
     },
     "options": {},
     "services": {
@@ -29,7 +29,7 @@
         "command": "  TEMPORAL_DATA=\"$FLOX_ENV_CACHE/temporal\"\n  mkdir -p \"$TEMPORAL_DATA\"\n  exec temporal server start-dev \\\n    --ip \"$TEMPORAL_HOST\" \\\n    --port \"$TEMPORAL_PORT\" \\\n    --ui-port \"$TEMPORAL_UI_PORT\" \\\n    --db-filename \"$TEMPORAL_DATA/temporal.db\"\n"
       },
       "worker": {
-        "command": "  autostart = \"true\"\n  until temporal workflow list --address \"$TEMPORAL_HOST:$TEMPORAL_PORT\" > /dev/null 2>&1; do\n    sleep 1\n  done\n  cd \"$FLOX_ENV_PROJECT\"\n  exec go run ./worker\n"
+        "command": "  until temporal workflow list --address \"$TEMPORAL_HOST:$TEMPORAL_PORT\" > /dev/null 2>&1; do\n    sleep 1\n  done\n  cd \"$FLOX_ENV_PROJECT\"\n  exec go run ./worker/main.go\n"
       }
     }
   },
