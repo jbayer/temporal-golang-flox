@@ -20,6 +20,7 @@ temporal-cli.pkg-path = "temporal-cli"
 temporal-cli.pkg-group = "temporal"
 go.pkg-path = "go"
 gum.pkg-path = "gum"
+gcc.pkg-path = "gcc"
 
 [vars]
 TEMPORAL_HOST = "127.0.0.1"
