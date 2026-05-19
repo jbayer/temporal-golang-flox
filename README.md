@@ -14,6 +14,27 @@ Install Flox 1.12.0 or newer [flox.dev/download](https://flox.dev/download)
 git clone https://github.com/jbayer/temporal-golang-flox.git
 cd temporal-golang-flox
 flox activate
+╭─────────────────────────────────────╮
+│                                     │
+│  Temporal Golang Getting Started    │
+│                                     │
+│  Check service status:              │
+│    flox services status             │
+│                                     │
+│  View service logs:                 │
+│    flox services logs temporal      │
+│    flox services logs worker        │
+│                                     │
+│  Send a hello workflow:             │
+│    go run ./start/main.go YourName  │
+│                                     │
+│  Open the Temporal Web UI:          │
+│    http://127.0.0.1:8233            │
+│                                     │
+╰─────────────────────────────────────╯
+
+✔ You are now using the environment 'temporal'
+To stop using this environment, type 'exit'
 ```
 
 **Devcontainer**
@@ -71,3 +92,4 @@ Exiting the shell where Flox was activated will shut down the temporal server an
 
 ## Uninstall
 
+You an uninstall Flox and all of the related software with [this uninstall documentation](https://flox.dev/docs/install-flox/uninstall/?h=uninstall).
