@@ -8,10 +8,21 @@ Install Flox 1.12.0 or newer [flox.dev/download](https://flox.dev/download)
 
 ## Quick Start
 
+**Desktop**
+
 ```bash
 git clone https://github.com/jbayer/temporal-golang-flox.git
 cd temporal-golang-flox
 flox activate
+```
+
+**Devcontainer**
+
+Open in VSCode or other tooling such as `devcontainer` that has devcontainer support to run in a container with Flox.
+
+```bash
+devcontainer up --workspace-folder . && \
+INSIDE_DEVCONTAINER=1 devcontainer exec --workspace-folder . bash
 ```
 
 That's it. When you activate, Flox installs all dependencies (Go, Temporal CLI, etc.), starts the Temporal dev server and a worker process as background services, and prints instructions for what to do next.
@@ -53,3 +64,10 @@ http://127.0.0.1:8233
 ## How It Works
 
 The entire environment is defined in `.flox/env/manifest.toml`. This single file declares the packages to install, environment variables, startup hooks, and service definitions. Consumers of this repo don't need to install Go, Temporal Server, Temporal CLI, or anything else by hand -- `flox activate` handles it all and gives them a shell with everything they need to be productive, ready to go.
+
+## Cleanup
+
+Exiting the shell where Flox was activated will shut down the temporal server and worker.
+
+## Uninstall
+
