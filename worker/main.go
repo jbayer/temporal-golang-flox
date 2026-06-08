@@ -19,7 +19,9 @@ func main() {
 	w := worker.New(c, "my-task-queue", worker.Options{})
 
 	w.RegisterWorkflow(greeting.SayHelloWorkflow)
+	w.RegisterWorkflow(greeting.SayGoodbyeWorkflow)
 	w.RegisterActivity(greeting.Greet)
+	w.RegisterActivity(greeting.Farewell)
 
 	err = w.Run(worker.InterruptCh())
 	if err != nil {
