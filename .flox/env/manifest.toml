@@ -21,9 +21,15 @@ temporal-cli.pkg-group = "temporal"
 go.pkg-path = "go"
 gum.pkg-path = "gum"
 gcc.pkg-path = "gcc"
+skills-temporal-developer.pkg-path = "flox/skills-temporal-developer"
+skills-temporal-developer.pkg-group = "skills-temporal-developer"
+claude-code.pkg-path = "flox/claude-code"
+claude-code.pkg-group = "claude-code"
+claude-managed.pkg-path = "flox/claude-managed"
+claude-managed.pkg-group = "claude-managed"
 
 [vars]
-TEMPORAL_HOST = "127.0.0.1"
+TEMPORAL_HOST = "0.0.0.0"
 TEMPORAL_PORT = "7233"
 TEMPORAL_UI_PORT = "8233"
 
@@ -52,7 +58,21 @@ gum style \
   "" \
   "$(gum style --bold 'Open the Temporal Web UI:')" \
   "  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT"
+
+eval "$(claude-managed setup-hook)"
 '''
+
+[profile]
+bash = '''
+eval "$(claude-managed setup-profile-bash)"
+'''
+zsh = '''
+eval "$(claude-managed setup-profile-zsh)"
+'''
+fish = '''
+claude-managed setup-profile-fish | source
+'''
+
 
 [services]
 auto-start = true

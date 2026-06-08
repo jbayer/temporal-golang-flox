@@ -1,6 +1,6 @@
 {
   "name": "Dev Container Example",
-  "image": "jbayer/devcontainer-flox:1.12.1@sha256:f6412335b8878983fab01d6da3bc1375497b6b2955be1a4465b153997dd37ffd",
+  "image": "jbayer/devcontainer-flox:1.12.2@sha256:840195fcf4bf36d463c64232fa08c0daf13532d0d213dd07635c5453220b4fc6",
   "features": {
       },
   "customizations": {
@@ -11,11 +11,18 @@
       ]
     }
   },
+  "appPort": ["8233:8233"],
   "mounts": [
-    "source=${localEnv:HOME}/.ssh,target=${localEnv:HOME}/.ssh,type=bind,readonly",
-    "source=${localWorkspaceFolderBasename}-nix-store,target=/nix,type=volume",
-    "source=${localWorkspaceFolderBasename}-floxuser-home,target=/home/floxuser,type=volume"
+    "source=/run/host-services/ssh-auth.sock,target=/run/host-services/ssh-auth.sock,type=bind",
+    "source=${localEnv:HOME}/.gitconfig,target=/home/flox/.gitconfig,type=bind,readonly",
+    "source=${localEnv:HOME}/.ssh,target=/home/flox/.ssh,type=bind,readonly",
+    "source=devcontainer-nix-store-multiuser,target=/nix,type=volume",
+    "source=${localWorkspaceFolderBasename}-flox-home,target=/home/flox,type=volume"
   ],
-  "postStartCommand": "",
-  "remoteUser": "floxuser"
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/run/host-services/ssh-auth.sock",
+    "FLOX_AUTOACTIVATE_DIR": "${containerWorkspaceFolder}"
+  },
+  "postStartCommand": "sudo /usr/local/bin/fix-home-perms.sh && sudo /usr/local/bin/start-nix-daemon.sh",
+  "remoteUser": "flox"
 }
