@@ -25,8 +25,11 @@ skills-temporal-developer.pkg-path = "flox/skills-temporal-developer"
 skills-temporal-developer.pkg-group = "skills-temporal-developer"
 claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude-code"
-claude-managed.pkg-path = "flox/claude-managed"
-claude-managed.pkg-group = "claude-managed"
+flox-ai.pkg-path = "flox/flox-ai"
+flox-ai.pkg-group = "flox-ai"
+vim.pkg-path = "vim"
+codex.pkg-path = "flox/codex"
+codex.pkg-group = "codex"
 
 [vars]
 TEMPORAL_HOST = "0.0.0.0"
@@ -58,19 +61,14 @@ gum style \
   "" \
   "$(gum style --bold 'Open the Temporal Web UI:')" \
   "  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT"
-
-eval "$(claude-managed setup-hook)"
 '''
 
 [profile]
 bash = '''
-eval "$(claude-managed setup-profile-bash)"
 '''
 zsh = '''
-eval "$(claude-managed setup-profile-zsh)"
 '''
 fish = '''
-claude-managed setup-profile-fish | source
 '''
 
 
