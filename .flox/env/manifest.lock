@@ -18,11 +18,17 @@
       "gcc": {
         "pkg-path": "gcc"
       },
+      "git": {
+        "pkg-path": "git"
+      },
       "go": {
         "pkg-path": "go"
       },
       "gum": {
         "pkg-path": "gum"
+      },
+      "less": {
+        "pkg-path": "less"
       },
       "skills-temporal-developer": {
         "pkg-path": "flox/skills-temporal-developer",
@@ -798,6 +804,140 @@
       "priority": 5
     },
     {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/nirns2rsk8m3l64jx3k4wl04c5xgjln1-git-2.54.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "git-2.54.0",
+      "pname": "git",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:13:14.850851Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.54.0",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/zn8gmbxxf5398hxg6y6nk5jimj85qj69-git-2.54.0-doc",
+        "out": "/nix/store/a14yxcqvv9x2l9mllgpirzhvz93pgprg-git-2.54.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/vicfhs491skhzki2fs95c3sq6ak1kkm8-git-2.54.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "git-2.54.0",
+      "pname": "git",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:44:09.791984Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.54.0",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/c7mafmqf28l7898rpbqqkd0p3m42hc03-git-2.54.0-debug",
+        "doc": "/nix/store/klwr4n2snj7ldlpkhwarwlif80myx0vj-git-2.54.0-doc",
+        "out": "/nix/store/ixp98f9avf8ikpdrmp40cj33g0dazyp9-git-2.54.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/kfyjgmz1vv4jn18j90mdwhdlbihg93w2-git-2.54.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "git-2.54.0",
+      "pname": "git",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T04:13:07.165719Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.54.0",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/agyxy5ay4x06b52mj24rz44fc82328ha-git-2.54.0-doc",
+        "out": "/nix/store/s9lsrlgwr3sabw9a2dl3laykas0ijk85-git-2.54.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/hg2n96ng32fxylxqci9jb8rwgd4hpc5g-git-2.54.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "git-2.54.0",
+      "pname": "git",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T04:47:05.961403Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.54.0",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/72fyakk8w8idjbksk0h8jbkq6sgvcm85-git-2.54.0-debug",
+        "doc": "/nix/store/l444690y78nfdwyzm6mghagl7xa97myf-git-2.54.0-doc",
+        "out": "/nix/store/bcnisk3ydfgv26v2gw3zlky24g00yww2-git-2.54.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "go",
       "broken": false,
       "derivation": "/nix/store/3wcz439vgpp14pn7jmfnhj1gfjz16pfm-go-1.26.3.drv",
@@ -1033,6 +1173,148 @@
       ],
       "outputs": {
         "out": "/nix/store/2ii7sbkq44zrkv4iv6g7bqi47m4ch28b-gum-0.17.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "less",
+      "broken": false,
+      "derivation": "/nix/store/435pzv6blpsaa1k5q5pfxy7dacmdklrq-less-692.drv",
+      "description": "More advanced file pager than 'more'",
+      "install_id": "less",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "less-692",
+      "pname": "less",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:13:32.342490Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "692",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "man",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/qpzmc0zv03g1qaffwmqn28a0mbfrnqll-less-692-man",
+        "out": "/nix/store/lvr16y75r1pdxpdv0aph5ak2yd0hkvqm-less-692"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "less",
+      "broken": false,
+      "derivation": "/nix/store/9lqqiwcn3z13b60n52jwjvad2na3kh8k-less-692.drv",
+      "description": "More advanced file pager than 'more'",
+      "install_id": "less",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "less-692",
+      "pname": "less",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:44:33.455251Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "692",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/5fcn3gpz7a4653bibaymyrjkkp35mdca-less-692-man",
+        "out": "/nix/store/1blb3s7hhsr77wqi598m6k1qkfp3ms0w-less-692"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "less",
+      "broken": false,
+      "derivation": "/nix/store/b8hnjgi862lk43qwxd09f2a1x250v9xq-less-692.drv",
+      "description": "More advanced file pager than 'more'",
+      "install_id": "less",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "less-692",
+      "pname": "less",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T04:13:25.239833Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "692",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/7skwf2mw5l3gs44kbxb7fn2hxc373jrs-less-692-man",
+        "out": "/nix/store/328psxzy5gmwpp5y13lwrrkkka5l5iqx-less-692"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "less",
+      "broken": false,
+      "derivation": "/nix/store/z95k9zkyhnmswcgf6y40rrbyv05xbsdf-less-692.drv",
+      "description": "More advanced file pager than 'more'",
+      "install_id": "less",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "less-692",
+      "pname": "less",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T04:47:31.105861Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "692",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/0r5hd8kslwxlx5vy876nalb14d55hx3r-less-692-man",
+        "out": "/nix/store/c6bacbn93qg4a7g9n4czww8rg24dvysr-less-692"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

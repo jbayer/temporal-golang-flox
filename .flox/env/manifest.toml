@@ -30,6 +30,8 @@ flox-ai.pkg-group = "flox-ai"
 vim.pkg-path = "vim"
 codex.pkg-path = "flox/codex"
 codex.pkg-group = "codex"
+git.pkg-path = "git"
+less.pkg-path = "less"
 
 [vars]
 TEMPORAL_HOST = "0.0.0.0"
