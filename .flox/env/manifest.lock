@@ -4,12 +4,7 @@
     "schema-version": "1.12.0",
     "install": {
       "claude-code": {
-        "pkg-path": "flox/claude-code",
-        "pkg-group": "claude-code"
-      },
-      "codex": {
-        "pkg-path": "flox/codex",
-        "pkg-group": "codex"
+        "pkg-path": "flox/claude-code"
       },
       "flox-ai": {
         "pkg-path": "flox/flox-ai",
@@ -35,8 +30,7 @@
         "pkg-group": "skills-temporal-developer"
       },
       "temporal-cli": {
-        "pkg-path": "temporal-cli",
-        "pkg-group": "temporal"
+        "pkg-path": "temporal-cli"
       },
       "vim": {
         "pkg-path": "vim"
@@ -55,7 +49,13 @@
       "zsh": "",
       "fish": ""
     },
-    "options": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-linux"
+      ]
+    },
     "services": {
       "auto-start": true,
       "temporal": {
@@ -68,259 +68,19 @@
   },
   "packages": [
     {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/wn7wbsywngmr4fdnr9rprwc7470kyd3w-claude-code-2.1.185.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs.git?rev=05d20dea9caf84413cf63c92028c4723a8643d23",
-      "name": "claude-code-2.1.185",
-      "pname": "claude-code",
-      "rev": "05d20dea9caf84413cf63c92028c4723a8643d23",
-      "rev_count": 9806,
-      "rev_date": "2026-06-21T20:51:38Z",
-      "scrape_date": "2026-06-23T14:40:32.669829Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.185",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sbpcbyd1chn48y5inzi8ja50gh4n9a3d-claude-code-2.1.185"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude-code",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/x60z3sbqf4f4spfv4hcrawygm5d071g4-claude-code-2.1.185.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9335e0828de86d7cbcc83f38226518302179a50a",
-      "name": "claude-code-2.1.185",
-      "pname": "claude-code",
-      "rev": "9335e0828de86d7cbcc83f38226518302179a50a",
-      "rev_count": 9730,
-      "rev_date": "2026-06-21T19:11:38Z",
-      "scrape_date": "2026-06-23T14:40:32.669834Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.185",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/yziz37g9nyqrknbjz6i8w8yyj9ngrkq6-claude-code-2.1.185"
-      },
-      "system": "aarch64-linux",
-      "group": "claude-code",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/q748m3a5v9482951r67zx3291vhn08sr-claude-code-2.1.185.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9335e0828de86d7cbcc83f38226518302179a50a",
-      "name": "claude-code-2.1.185",
-      "pname": "claude-code",
-      "rev": "9335e0828de86d7cbcc83f38226518302179a50a",
-      "rev_count": 9730,
-      "rev_date": "2026-06-21T19:11:38Z",
-      "scrape_date": "2026-06-23T14:40:32.669835Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.185",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zirfy7jc92j9l4is7hgqkdqgpfnm0qal-claude-code-2.1.185"
-      },
-      "system": "x86_64-darwin",
-      "group": "claude-code",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/83pw5bgy4llmy9lg3vm2rzqqv7p95ffl-claude-code-2.1.185.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs.git?rev=05d20dea9caf84413cf63c92028c4723a8643d23",
-      "name": "claude-code-2.1.185",
-      "pname": "claude-code",
-      "rev": "05d20dea9caf84413cf63c92028c4723a8643d23",
-      "rev_count": 9806,
-      "rev_date": "2026-06-21T20:51:38Z",
-      "scrape_date": "2026-06-23T14:40:32.669836Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.185",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/rbf0yabs53cm1anwnfjkm0crpvsj1kyw-claude-code-2.1.185"
-      },
-      "system": "x86_64-linux",
-      "group": "claude-code",
-      "priority": 5
-    },
-    {
-      "attr_path": "codex",
-      "broken": false,
-      "derivation": "/nix/store/0lix2l6rfp1gy6lbic7p3wig9gm1xp34-codex-0.142.0.drv",
-      "description": "OpenAI Codex CLI - a coding agent that runs locally",
-      "install_id": "codex",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/floxenvs?rev=06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "name": "codex-0.142.0",
-      "pname": "codex",
-      "rev": "06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "rev_count": 10258,
-      "rev_date": "2026-06-23T04:00:12Z",
-      "scrape_date": "2026-06-23T21:23:10.977467424Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.142.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/dvrjd4wllx9q9rr9glsxiq34r1cxckxw-codex-0.142.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "codex",
-      "priority": 5
-    },
-    {
-      "attr_path": "codex",
-      "broken": false,
-      "derivation": "/nix/store/a3sd2s9523r9961wgaphrgd9fwdmpli3-codex-0.142.0.drv",
-      "description": "OpenAI Codex CLI - a coding agent that runs locally",
-      "install_id": "codex",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/floxenvs?rev=06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "name": "codex-0.142.0",
-      "pname": "codex",
-      "rev": "06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "rev_count": 10258,
-      "rev_date": "2026-06-23T04:00:12Z",
-      "scrape_date": "2026-06-23T21:23:10.977475424Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.142.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jm4wlkpymh8iwn6sh2n6lq2k1d4m3yar-codex-0.142.0"
-      },
-      "system": "aarch64-linux",
-      "group": "codex",
-      "priority": 5
-    },
-    {
-      "attr_path": "codex",
-      "broken": false,
-      "derivation": "/nix/store/8qglllb5hpsqkcfpsi625dpq1jlx26gy-codex-0.142.0.drv",
-      "description": "OpenAI Codex CLI - a coding agent that runs locally",
-      "install_id": "codex",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/floxenvs?rev=06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "name": "codex-0.142.0",
-      "pname": "codex",
-      "rev": "06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "rev_count": 10258,
-      "rev_date": "2026-06-23T04:00:12Z",
-      "scrape_date": "2026-06-23T21:23:10.977476715Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.142.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/am8airlcsr0rivqycxn0fmi18vvf0psi-codex-0.142.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "codex",
-      "priority": 5
-    },
-    {
-      "attr_path": "codex",
-      "broken": false,
-      "derivation": "/nix/store/kq73ahb2nqn54sypr5ydgvcj4h1ncrfl-codex-0.142.0.drv",
-      "description": "OpenAI Codex CLI - a coding agent that runs locally",
-      "install_id": "codex",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/floxenvs?rev=06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "name": "codex-0.142.0",
-      "pname": "codex",
-      "rev": "06c2f5ca4d72ef11d708ada88ca03de3fee52498",
-      "rev_count": 10258,
-      "rev_date": "2026-06-23T04:00:12Z",
-      "scrape_date": "2026-06-23T21:23:10.977478132Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.142.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/j50hlkb0xvk70rl5h1sagxkl94cn8clb-codex-0.142.0"
-      },
-      "system": "x86_64-linux",
-      "group": "codex",
-      "priority": 5
-    },
-    {
       "attr_path": "flox-ai",
       "broken": false,
-      "derivation": "/nix/store/zp4w0cwp0sxbdch8fij6ifa2rpww45gi-flox-ai-0.8.0.drv",
+      "derivation": "/nix/store/57jfyz6s1dig32zmb9ik9ih8kqkvv7dd-flox-ai-0.8.0.drv",
       "description": "Flox-native config management for Claude Code CLI",
       "install_id": "flox-ai",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
+      "locked_url": "https://github.com/flox/flox-ai?rev=287455649209a0ca582541c885313f8609847907",
       "name": "flox-ai-0.8.0",
       "pname": "flox-ai",
-      "rev": "fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
-      "rev_count": 10119,
-      "rev_date": "2026-06-23T01:16:55Z",
-      "scrape_date": "2026-06-23T14:40:32.669843Z",
+      "rev": "287455649209a0ca582541c885313f8609847907",
+      "rev_count": 79,
+      "rev_date": "2026-07-21T21:53:51Z",
+      "scrape_date": "2026-07-27T23:58:51.612746Z",
       "stabilities": [
         "staging",
         "unstable"
@@ -331,7 +91,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/f0lzb5ni2d1sxrnpji9yrl5h12ij6qih-flox-ai-0.8.0"
+        "out": "/nix/store/crwyb5188yw5lv4znqprzbiqg5vy4ibd-flox-ai-0.8.0"
       },
       "system": "aarch64-darwin",
       "group": "flox-ai",
@@ -340,17 +100,17 @@
     {
       "attr_path": "flox-ai",
       "broken": false,
-      "derivation": "/nix/store/q68na0i39gz4x3j61ivpdfyanrrp16dk-flox-ai-0.8.0.drv",
+      "derivation": "/nix/store/1clj1qp1zchjr18xqd6h5qy4krnbfp7x-flox-ai-0.8.0.drv",
       "description": "Flox-native config management for Claude Code CLI",
       "install_id": "flox-ai",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
+      "locked_url": "https://github.com/flox/flox-ai?rev=287455649209a0ca582541c885313f8609847907",
       "name": "flox-ai-0.8.0",
       "pname": "flox-ai",
-      "rev": "fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
-      "rev_count": 10119,
-      "rev_date": "2026-06-23T01:16:55Z",
-      "scrape_date": "2026-06-23T14:40:32.669853Z",
+      "rev": "287455649209a0ca582541c885313f8609847907",
+      "rev_count": 79,
+      "rev_date": "2026-07-21T21:53:51Z",
+      "scrape_date": "2026-07-27T23:58:51.612751Z",
       "stabilities": [
         "staging",
         "unstable"
@@ -361,7 +121,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ngx0s4wqfx12631i5ak5yn6bzmk29b2b-flox-ai-0.8.0"
+        "out": "/nix/store/4zf5cxf627sbr8syddjx7j5pmk4321ri-flox-ai-0.8.0"
       },
       "system": "aarch64-linux",
       "group": "flox-ai",
@@ -370,17 +130,17 @@
     {
       "attr_path": "flox-ai",
       "broken": false,
-      "derivation": "/nix/store/n3ha548ngmaczyjliqbni4xwla76s48f-flox-ai-0.8.0.drv",
+      "derivation": "/nix/store/w14almryjawbkglkr56spfxi25ihvhzw-flox-ai-0.8.0.drv",
       "description": "Flox-native config management for Claude Code CLI",
       "install_id": "flox-ai",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
+      "locked_url": "https://github.com/flox/flox-ai?rev=287455649209a0ca582541c885313f8609847907",
       "name": "flox-ai-0.8.0",
       "pname": "flox-ai",
-      "rev": "fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
-      "rev_count": 10119,
-      "rev_date": "2026-06-23T01:16:55Z",
-      "scrape_date": "2026-06-23T14:40:32.669854Z",
+      "rev": "287455649209a0ca582541c885313f8609847907",
+      "rev_count": 79,
+      "rev_date": "2026-07-21T21:53:51Z",
+      "scrape_date": "2026-07-27T23:58:51.612754Z",
       "stabilities": [
         "staging",
         "unstable"
@@ -391,37 +151,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/g53gm910jsgaqcld3hjxlndd068qbli0-flox-ai-0.8.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "flox-ai",
-      "priority": 5
-    },
-    {
-      "attr_path": "flox-ai",
-      "broken": false,
-      "derivation": "/nix/store/scgz7wagyl5sv48ykpzrck78ja6rf310-flox-ai-0.8.0.drv",
-      "description": "Flox-native config management for Claude Code CLI",
-      "install_id": "flox-ai",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
-      "name": "flox-ai-0.8.0",
-      "pname": "flox-ai",
-      "rev": "fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
-      "rev_count": 10119,
-      "rev_date": "2026-06-23T01:16:55Z",
-      "scrape_date": "2026-06-23T14:40:32.669855Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.8.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/fw9wj78gija7qx4r09ia48fqnpm7j2kh-flox-ai-0.8.0"
+        "out": "/nix/store/0d1s3sqq8r88f30qjg29gw76vl4gfbwg-flox-ai-0.8.0"
       },
       "system": "x86_64-linux",
       "group": "flox-ai",
@@ -434,14 +164,15 @@
       "description": "Temporal Developer skill for Claude Code and OpenCode — build, debug, and manage Temporal workflows, activities, and workers across Python, TypeScript, Go, Java, .NET, and Ruby.",
       "install_id": "skills-temporal-developer",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=666bd3c09d9dc4a9a88bf398efd70abf377ee503",
+      "locked_url": "https://github.com/flox/floxenvs?rev=69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "name": "skills-temporal-developer-0.5.0",
       "pname": "skills-temporal-developer",
-      "rev": "666bd3c09d9dc4a9a88bf398efd70abf377ee503",
-      "rev_count": 10345,
-      "rev_date": "2026-06-23T10:50:21Z",
-      "scrape_date": "2026-06-23T14:40:32.669863Z",
+      "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
+      "rev_count": 14161,
+      "rev_date": "2026-07-13T15:44:29Z",
+      "scrape_date": "2026-07-27T23:58:51.612767Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -464,14 +195,15 @@
       "description": "Temporal Developer skill for Claude Code and OpenCode — build, debug, and manage Temporal workflows, activities, and workers across Python, TypeScript, Go, Java, .NET, and Ruby.",
       "install_id": "skills-temporal-developer",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=666bd3c09d9dc4a9a88bf398efd70abf377ee503",
+      "locked_url": "https://github.com/flox/floxenvs?rev=69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "name": "skills-temporal-developer-0.5.0",
       "pname": "skills-temporal-developer",
-      "rev": "666bd3c09d9dc4a9a88bf398efd70abf377ee503",
-      "rev_count": 10345,
-      "rev_date": "2026-06-23T10:50:21Z",
-      "scrape_date": "2026-06-23T14:40:32.669869Z",
+      "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
+      "rev_count": 14161,
+      "rev_date": "2026-07-13T15:44:29Z",
+      "scrape_date": "2026-07-27T23:58:51.612770Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -490,36 +222,6 @@
     {
       "attr_path": "skills-temporal-developer",
       "broken": false,
-      "derivation": "/nix/store/gq8lrawijrhlh0qdlcx5j06v3xps076s-skills-temporal-developer-0.5.0.drv",
-      "description": "Temporal Developer skill for Claude Code and OpenCode — build, debug, and manage Temporal workflows, activities, and workers across Python, TypeScript, Go, Java, .NET, and Ruby.",
-      "install_id": "skills-temporal-developer",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/floxenvs?rev=666bd3c09d9dc4a9a88bf398efd70abf377ee503",
-      "name": "skills-temporal-developer-0.5.0",
-      "pname": "skills-temporal-developer",
-      "rev": "666bd3c09d9dc4a9a88bf398efd70abf377ee503",
-      "rev_count": 10345,
-      "rev_date": "2026-06-23T10:50:21Z",
-      "scrape_date": "2026-06-23T14:40:32.669870Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/f714kp3wv3011yly5g1gfxv8nrq132n8-skills-temporal-developer-0.5.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "skills-temporal-developer",
-      "priority": 5
-    },
-    {
-      "attr_path": "skills-temporal-developer",
-      "broken": false,
       "derivation": "/nix/store/5aszgmsipr09j8xmmzlq5gday7w4a82j-skills-temporal-developer-0.5.0.drv",
       "description": "Temporal Developer skill for Claude Code and OpenCode — build, debug, and manage Temporal workflows, activities, and workers across Python, TypeScript, Go, Java, .NET, and Ruby.",
       "install_id": "skills-temporal-developer",
@@ -530,8 +232,9 @@
       "rev": "fec19ec9f2f9d7195916f149674e5fad12d9b4ba",
       "rev_count": 10119,
       "rev_date": "2026-06-23T01:16:55Z",
-      "scrape_date": "2026-06-23T14:40:32.669871Z",
+      "scrape_date": "2026-07-27T23:58:51.612774Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -548,123 +251,96 @@
       "priority": 5
     },
     {
-      "attr_path": "temporal-cli",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/hlwr017m21x89aaiirbz2f6dd4c81nr9-temporal-cli-1.7.1.drv",
-      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
-      "install_id": "temporal-cli",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "temporal-cli-1.7.1",
-      "pname": "temporal-cli",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T03:15:16.684958Z",
+      "derivation": "/nix/store/k6zbapl35sa4nrjyyacbsd2p8j0z8wji-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "rev_count": 16135,
+      "rev_date": "2026-07-25T07:00:39Z",
+      "scrape_date": "2026-07-27T23:58:51.612858Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
-      "unfree": false,
-      "version": "1.7.1",
+      "unfree": true,
+      "version": "2.1.220",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/krrgxqbm77g1r50rfs73facdgjgkpkzw-temporal-cli-1.7.1"
+        "out": "/nix/store/idanzswmibhgngibck6484g4zxa1swh3-claude-code-2.1.220"
       },
       "system": "aarch64-darwin",
-      "group": "temporal",
+      "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "temporal-cli",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/n60nnnhbxrgwn4w6qkq0wsassbgl0ya9-temporal-cli-1.7.1.drv",
-      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
-      "install_id": "temporal-cli",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "temporal-cli-1.7.1",
-      "pname": "temporal-cli",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T03:46:44.627586Z",
+      "derivation": "/nix/store/h7sp8dra6s1xsq58ikczpm1llyphs1kk-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "rev_count": 16135,
+      "rev_date": "2026-07-25T07:00:39Z",
+      "scrape_date": "2026-07-27T23:58:51.612861Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
-      "unfree": false,
-      "version": "1.7.1",
+      "unfree": true,
+      "version": "2.1.220",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/af9cravpyfk9a2p8lh26d3p1pghichva-temporal-cli-1.7.1"
+        "out": "/nix/store/10y3br3nvi67q8c2g4dwm2cykhgbwwqx-claude-code-2.1.220"
       },
       "system": "aarch64-linux",
-      "group": "temporal",
+      "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "temporal-cli",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/rk1yx9sdjn449yjh3z9h11qizwwf160m-temporal-cli-1.7.1.drv",
-      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
-      "install_id": "temporal-cli",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "temporal-cli-1.7.1",
-      "pname": "temporal-cli",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:15:10.317395Z",
+      "derivation": "/nix/store/8f68lcp2bp10lz3wg7c24xn11gqymprz-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "b462aad5bfa753cd23eaf5656aad3195d4ae2b87",
+      "rev_count": 16135,
+      "rev_date": "2026-07-25T07:00:39Z",
+      "scrape_date": "2026-07-27T23:58:51.612863Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
-      "unfree": false,
-      "version": "1.7.1",
+      "unfree": true,
+      "version": "2.1.220",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/4schh11wg09w0kawhh3z1c9m0vmskfvk-temporal-cli-1.7.1"
-      },
-      "system": "x86_64-darwin",
-      "group": "temporal",
-      "priority": 5
-    },
-    {
-      "attr_path": "temporal-cli",
-      "broken": false,
-      "derivation": "/nix/store/ral33ywpx9f32w830np68fmnpxcqzfm5-temporal-cli-1.7.1.drv",
-      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
-      "install_id": "temporal-cli",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "temporal-cli-1.7.1",
-      "pname": "temporal-cli",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:49:47.995254Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.7.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/na6jvsbkabqhzb2zv45wb7hlvpr0jzhd-temporal-cli-1.7.1"
+        "out": "/nix/store/4jwjd8387abmkxcrfblhc6c28zli4f4p-claude-code-2.1.220"
       },
       "system": "x86_64-linux",
-      "group": "temporal",
+      "group": "toplevel",
       "priority": 5
     },
     {
@@ -682,6 +358,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:13:14.749561Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -715,6 +392,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:44:09.645275Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -737,39 +415,6 @@
     {
       "attr_path": "gcc",
       "broken": false,
-      "derivation": "/nix/store/5di0jdzn9qqqcich8w9qbr5irz4dm8jh-gcc-wrapper-15.2.0.drv",
-      "description": "GNU Compiler Collection, version 15.2.0 (wrapper script)",
-      "install_id": "gcc",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "gcc-wrapper-15.2.0",
-      "pname": "gcc",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:13:07.064846Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "15.2.0",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "info": "/nix/store/icsmawdpqplpibq89mzxnhv39wyws20b-gcc-wrapper-15.2.0-info",
-        "man": "/nix/store/2q2jzxbhdbqn7q4bw6h7ql2vpra4nxmx-gcc-wrapper-15.2.0-man",
-        "out": "/nix/store/q5dy2amk2l7rq23gq7hi6kxsb520gd5p-gcc-wrapper-15.2.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "gcc",
-      "broken": false,
       "derivation": "/nix/store/y7wnv3kycy9gpxzwmny1sppi7il9i31a-gcc-wrapper-15.2.0.drv",
       "description": "GNU Compiler Collection, version 15.2.0 (wrapper script)",
       "install_id": "gcc",
@@ -782,6 +427,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:47:05.803732Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -790,6 +436,8 @@
       "outputs_to_install": [
         "man",
         "man",
+        "man",
+        "out",
         "out",
         "out",
         "out"
@@ -818,6 +466,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:13:14.850851Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -851,6 +500,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:44:09.791984Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -872,38 +522,6 @@
     {
       "attr_path": "git",
       "broken": false,
-      "derivation": "/nix/store/kfyjgmz1vv4jn18j90mdwhdlbihg93w2-git-2.54.0.drv",
-      "description": "Distributed version control system",
-      "install_id": "git",
-      "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "git-2.54.0",
-      "pname": "git",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:13:07.165719Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.54.0",
-      "outputs_to_install": [
-        "out",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/agyxy5ay4x06b52mj24rz44fc82328ha-git-2.54.0-doc",
-        "out": "/nix/store/s9lsrlgwr3sabw9a2dl3laykas0ijk85-git-2.54.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "git",
-      "broken": false,
       "derivation": "/nix/store/hg2n96ng32fxylxqci9jb8rwgd4hpc5g-git-2.54.0.drv",
       "description": "Distributed version control system",
       "install_id": "git",
@@ -916,6 +534,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:47:05.961403Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -952,6 +571,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:13:14.979907Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -982,6 +602,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:44:10.523965Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1000,36 +621,6 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/7injq3dc4gh49fwhgh403kf7n1y6f9ci-go-1.26.3.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "go-1.26.3",
-      "pname": "go",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:13:07.336579Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.26.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3f2jzvxmhhlarjqxy1p7i9r5l34siz29-go-1.26.3"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
       "derivation": "/nix/store/zalhv7i71i9c3v7vm61psf2arglbzjfg-go-1.26.3.drv",
       "description": "Go Programming language",
       "install_id": "go",
@@ -1042,12 +633,14 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:47:06.772425Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
       "version": "1.26.3",
       "outputs_to_install": [
+        "out",
         "out",
         "out"
       ],
@@ -1073,6 +666,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:13:15.222283Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1103,6 +697,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:44:10.917697Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1121,36 +716,6 @@
     {
       "attr_path": "gum",
       "broken": false,
-      "derivation": "/nix/store/ib5kcnql661slkgn223m5c17g6b9ala3-gum-0.17.0.drv",
-      "description": "Tasty Bubble Gum for your shell",
-      "install_id": "gum",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "gum-0.17.0",
-      "pname": "gum",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:13:07.576990Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.17.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/n20dhdnibsqb890jvwhyw4xd3qqkazly-gum-0.17.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "gum",
-      "broken": false,
       "derivation": "/nix/store/isk54hr8s4cw8z3yiksk07yi1bzfmamh-gum-0.17.0.drv",
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
@@ -1163,6 +728,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:47:07.206266Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1193,6 +759,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:13:32.342490Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1230,6 +797,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:44:33.455251Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1252,40 +820,6 @@
     {
       "attr_path": "less",
       "broken": false,
-      "derivation": "/nix/store/b8hnjgi862lk43qwxd09f2a1x250v9xq-less-692.drv",
-      "description": "More advanced file pager than 'more'",
-      "install_id": "less",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "less-692",
-      "pname": "less",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:13:25.239833Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "692",
-      "outputs_to_install": [
-        "man",
-        "man",
-        "out",
-        "out"
-      ],
-      "outputs": {
-        "man": "/nix/store/7skwf2mw5l3gs44kbxb7fn2hxc373jrs-less-692-man",
-        "out": "/nix/store/328psxzy5gmwpp5y13lwrrkkka5l5iqx-less-692"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "less",
-      "broken": false,
       "derivation": "/nix/store/z95k9zkyhnmswcgf6y40rrbyv05xbsdf-less-692.drv",
       "description": "More advanced file pager than 'more'",
       "install_id": "less",
@@ -1298,6 +832,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:47:31.105861Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1321,6 +856,99 @@
       "priority": 5
     },
     {
+      "attr_path": "temporal-cli",
+      "broken": false,
+      "derivation": "/nix/store/hlwr017m21x89aaiirbz2f6dd4c81nr9-temporal-cli-1.7.1.drv",
+      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
+      "install_id": "temporal-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "temporal-cli-1.7.1",
+      "pname": "temporal-cli",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:15:16.684958Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/krrgxqbm77g1r50rfs73facdgjgkpkzw-temporal-cli-1.7.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "temporal-cli",
+      "broken": false,
+      "derivation": "/nix/store/n60nnnhbxrgwn4w6qkq0wsassbgl0ya9-temporal-cli-1.7.1.drv",
+      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
+      "install_id": "temporal-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "temporal-cli-1.7.1",
+      "pname": "temporal-cli",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:46:44.627586Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/af9cravpyfk9a2p8lh26d3p1pghichva-temporal-cli-1.7.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "temporal-cli",
+      "broken": false,
+      "derivation": "/nix/store/ral33ywpx9f32w830np68fmnpxcqzfm5-temporal-cli-1.7.1.drv",
+      "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
+      "install_id": "temporal-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "temporal-cli-1.7.1",
+      "pname": "temporal-cli",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T04:49:47.995254Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/na6jvsbkabqhzb2zv45wb7hlvpr0jzhd-temporal-cli-1.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "vim",
       "broken": false,
       "derivation": "/nix/store/1q5qn5ff82nhrk1p0wnrf7dgir17xbhd-vim-9.2.0389.drv",
@@ -1335,6 +963,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:16:02.901626Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1367,6 +996,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T03:47:43.799581Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1387,38 +1017,6 @@
     {
       "attr_path": "vim",
       "broken": false,
-      "derivation": "/nix/store/bp28n9y2zlyczrb7w6hsam7jq6rmk35y-vim-9.2.0389.drv",
-      "description": "Most popular clone of the VI editor",
-      "install_id": "vim",
-      "license": "Vim",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "vim-9.2.0389",
-      "pname": "vim",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:15:56.928873Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "9.2.0389",
-      "outputs_to_install": [
-        "out",
-        "xxd"
-      ],
-      "outputs": {
-        "out": "/nix/store/s8z8fl451bwm9l3fclyswk340nfjpnsd-vim-9.2.0389",
-        "xxd": "/nix/store/wbadf0b67q8srdvs1br31z1xflcwv1ln-vim-9.2.0389-xxd"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "vim",
-      "broken": false,
       "derivation": "/nix/store/4ql9hd0y1lf1rg5gy0grqgscnbfsal0f-vim-9.2.0389.drv",
       "description": "Most popular clone of the VI editor",
       "install_id": "vim",
@@ -1431,6 +1029,7 @@
       "rev_date": "2026-06-16T02:33:49Z",
       "scrape_date": "2026-06-17T04:50:47.109697Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],

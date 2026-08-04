@@ -17,19 +17,15 @@ schema-version = "1.12.0"
 
 [install]
 temporal-cli.pkg-path = "temporal-cli"
-temporal-cli.pkg-group = "temporal"
 go.pkg-path = "go"
 gum.pkg-path = "gum"
 gcc.pkg-path = "gcc"
 skills-temporal-developer.pkg-path = "flox/skills-temporal-developer"
 skills-temporal-developer.pkg-group = "skills-temporal-developer"
 claude-code.pkg-path = "flox/claude-code"
-claude-code.pkg-group = "claude-code"
 flox-ai.pkg-path = "flox/flox-ai"
 flox-ai.pkg-group = "flox-ai"
 vim.pkg-path = "vim"
-codex.pkg-path = "flox/codex"
-codex.pkg-group = "codex"
 git.pkg-path = "git"
 less.pkg-path = "less"
 
@@ -94,3 +90,6 @@ worker.command = '''
   cd "$FLOX_ENV_PROJECT"
   exec go run ./worker/main.go
 '''
+
+[options]
+systems = [ "aarch64-darwin", "aarch64-linux", "x86_64-linux" ]
