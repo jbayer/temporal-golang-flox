@@ -31,7 +31,7 @@ flox activate
 │  Open the Temporal Web UI:          │
 │    http://127.0.0.1:8233            │
 │                                     │
-│  Launch claude code with skills:    │
+│  Launch claude with temporal skill  │
 │    flox-ai launch claude            │
 │                                     │
 ╰─────────────────────────────────────╯
