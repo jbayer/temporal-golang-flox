@@ -4,7 +4,7 @@ A simple Temporal greeting workflow in Go, packaged with a [Flox](https://flox.d
 
 ## Prerequisites
 
-Install Flox 1.12.0 or newer [flox.dev/download](https://flox.dev/download)
+Install Flox 1.14.0 or newer [flox.dev/download](https://flox.dev/download)
 
 ## Quick Start
 
@@ -30,6 +30,9 @@ flox activate
 │                                     │
 │  Open the Temporal Web UI:          │
 │    http://127.0.0.1:8233            │
+│                                     │
+│  Launch claude code with skills:    │
+│    flox-ai launch claude            │
 │                                     │
 ╰─────────────────────────────────────╯
 
@@ -81,6 +84,13 @@ Open the Temporal Web UI:
 ```
 http://127.0.0.1:8233
 ```
+
+Launch claude with the temporal-developer skill:
+
+```
+flox-ai launch claude
+```
+
 
 ## How It Works
 
