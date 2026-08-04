@@ -25,6 +25,10 @@
       "less": {
         "pkg-path": "less"
       },
+      "skills-flox": {
+        "pkg-path": "flox/skills-flox",
+        "pkg-group": "skills-flox"
+      },
       "skills-temporal-developer": {
         "pkg-path": "flox/skills-temporal-developer",
         "pkg-group": "skills-temporal-developer"
@@ -42,12 +46,10 @@
       "TEMPORAL_UI_PORT": "8233"
     },
     "hook": {
-      "on-activate": "export TEMPORAL_DATA=\"$FLOX_ENV_CACHE/temporal\"\n\nif [ ! -d \"$TEMPORAL_DATA\" ]; then\n  mkdir -p \"$TEMPORAL_DATA\"\nfi\n\ngum style \\\n  --border rounded --border-foreground 212 \\\n  --padding \"1 2\" --margin \"1 0\" \\\n  \"$(gum style --bold --foreground 212 'Temporal Golang Getting Started')\" \\\n  \"\" \\\n  \"$(gum style --bold 'Check service status:')\" \\\n  \"  flox services status\" \\\n  \"\" \\\n  \"$(gum style --bold 'View service logs:')\" \\\n  \"  flox services logs temporal\" \\\n  \"  flox services logs worker\" \\\n  \"\" \\\n  \"$(gum style --bold 'Send a hello workflow:')\" \\\n  \"  go run ./start/main.go YourName\" \\\n  \"\" \\\n  \"$(gum style --bold 'Open the Temporal Web UI:')\" \\\n  \"  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT\"\n"
+      "on-activate": "export TEMPORAL_DATA=\"$FLOX_ENV_CACHE/temporal\"\n\nif [ ! -d \"$TEMPORAL_DATA\" ]; then\n  mkdir -p \"$TEMPORAL_DATA\"\nfi\n"
     },
     "profile": {
-      "bash": "",
-      "zsh": "",
-      "fish": ""
+      "common": "gum style \\\n  --border rounded --border-foreground 212 \\\n  --padding \"1 2\" --margin \"1 0\" \\\n  \"$(gum style --bold --foreground 212 'Temporal Golang Getting Started')\" \\\n  \"\" \\\n  \"$(gum style --bold 'Check service status:')\" \\\n  \"  flox services status\" \\\n  \"\" \\\n  \"$(gum style --bold 'View service logs:')\" \\\n  \"  flox services logs temporal\" \\\n  \"  flox services logs worker\" \\\n  \"\" \\\n  \"$(gum style --bold 'Send a hello workflow:')\" \\\n  \"  go run ./start/main.go YourName\" \\\n  \"\" \\\n  \"$(gum style --bold 'Open the Temporal Web UI:')\" \\\n  \"  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT\" \\\n  \"\" \\\n  \"$(gum style --bold 'Launch claude with temporal skill:')\" \\\n  \"  flox-ai launch claude\" \\\n"
     },
     "options": {
       "systems": [
@@ -1045,6 +1047,90 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skills-flox",
+      "derivation": "/nix/store/iwjczxx7mwsb7bxi1f9ikpym3qp7wv4z-skills-flox-1.0.0.drv",
+      "description": "Flox skills (flox, floxify) packaged for Claude Code, Codex, Pi, and OpenCode",
+      "install_id": "skills-flox",
+      "locked_url": "https://github.com/flox/flox-skills?rev=20397d326d98813d69164e1363f0e444f534020b",
+      "name": "skills-flox-1.0.0",
+      "pname": "skills-flox",
+      "rev": "20397d326d98813d69164e1363f0e444f534020b",
+      "rev_count": 190,
+      "rev_date": "2026-07-31T20:54:04Z",
+      "scrape_date": "2026-08-04T00:41:38.072140Z",
+      "stabilities": [
+        "staging",
+        "unstable",
+        "stable"
+      ],
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fx23m36xd5gca43qxs13krwiq9hhrb1n-skills-flox-1.0.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "skills-flox",
+      "priority": 5
+    },
+    {
+      "attr_path": "skills-flox",
+      "derivation": "/nix/store/06axl2r3gbxan81g5mdx82k6dindf02j-skills-flox-1.0.0.drv",
+      "description": "Flox skills (flox, floxify) packaged for Claude Code, Codex, Pi, and OpenCode",
+      "install_id": "skills-flox",
+      "locked_url": "https://github.com/flox/flox-skills?rev=20397d326d98813d69164e1363f0e444f534020b",
+      "name": "skills-flox-1.0.0",
+      "pname": "skills-flox",
+      "rev": "20397d326d98813d69164e1363f0e444f534020b",
+      "rev_count": 190,
+      "rev_date": "2026-07-31T20:54:04Z",
+      "scrape_date": "2026-08-04T00:41:38.072148Z",
+      "stabilities": [
+        "staging",
+        "unstable",
+        "stable"
+      ],
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0v30angyqls9is8gm45krklf8yg5y54c-skills-flox-1.0.0"
+      },
+      "system": "aarch64-linux",
+      "group": "skills-flox",
+      "priority": 5
+    },
+    {
+      "attr_path": "skills-flox",
+      "derivation": "/nix/store/049lxh477w8g0v1pmnffw0is87lpayps-skills-flox-1.0.0.drv",
+      "description": "Flox skills (flox, floxify) packaged for Claude Code, Codex, Pi, and OpenCode",
+      "install_id": "skills-flox",
+      "locked_url": "https://github.com/flox/flox-skills?rev=20397d326d98813d69164e1363f0e444f534020b",
+      "name": "skills-flox-1.0.0",
+      "pname": "skills-flox",
+      "rev": "20397d326d98813d69164e1363f0e444f534020b",
+      "rev_count": 190,
+      "rev_date": "2026-07-31T20:54:04Z",
+      "scrape_date": "2026-08-04T00:41:38.072150Z",
+      "stabilities": [
+        "staging",
+        "unstable",
+        "stable"
+      ],
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/71i77jz5nbqbwzvl7vkkmppmv6m47wkm-skills-flox-1.0.0"
+      },
+      "system": "x86_64-linux",
+      "group": "skills-flox",
       "priority": 5
     }
   ]

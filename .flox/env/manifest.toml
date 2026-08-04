@@ -28,6 +28,8 @@ flox-ai.pkg-group = "flox-ai"
 vim.pkg-path = "vim"
 git.pkg-path = "git"
 less.pkg-path = "less"
+skills-flox.pkg-path = "flox/skills-flox"
+skills-flox.pkg-group = "skills-flox"
 
 [vars]
 TEMPORAL_HOST = "0.0.0.0"
@@ -41,7 +43,10 @@ export TEMPORAL_DATA="$FLOX_ENV_CACHE/temporal"
 if [ ! -d "$TEMPORAL_DATA" ]; then
   mkdir -p "$TEMPORAL_DATA"
 fi
+'''
 
+[profile]
+common='''
 gum style \
   --border rounded --border-foreground 212 \
   --padding "1 2" --margin "1 0" \
@@ -58,17 +63,11 @@ gum style \
   "  go run ./start/main.go YourName" \
   "" \
   "$(gum style --bold 'Open the Temporal Web UI:')" \
-  "  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT"
+  "  http://$TEMPORAL_HOST:$TEMPORAL_UI_PORT" \
+  "" \
+  "$(gum style --bold 'Launch claude with temporal skill:')" \
+  "  flox-ai launch claude" \
 '''
-
-[profile]
-bash = '''
-'''
-zsh = '''
-'''
-fish = '''
-'''
-
 
 [services]
 auto-start = true
